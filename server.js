@@ -25,7 +25,7 @@ const fetchData = async (url) => {
 
 // default
 app.get("/", (req, res) => {
-  res.json("Welcome to Tasty Zoom Restaurant");
+  res.json({ message: "Welcome to Tasty Zoom Restaurant" });
 });
 
 // Route for fetching Swiggy data
