@@ -7,7 +7,7 @@ const app = express();
 app.use(cors());
 
 // Import Routes
-const apiRoutes = require("./api/routes");
+const apiRoutes = require("./routes");
 
 // Use Routes
 app.use("/", apiRoutes);
