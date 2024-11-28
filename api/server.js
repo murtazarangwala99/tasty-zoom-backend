@@ -12,9 +12,6 @@ const apiRoutes = require("./routes");
 // Use Routes
 app.use("/", apiRoutes);
 
-// Export the app for serverless environments (like Vercel)
-module.exports = app;
-
 // Run the app locally if not in a serverless environment
 if (require.main === module) {
   const PORT = 5000;
@@ -22,3 +19,6 @@ if (require.main === module) {
     console.log(`Server is running locally at http://localhost:${PORT}`);
   });
 }
+
+// Export the app for serverless environments (like Vercel)
+module.exports = app;

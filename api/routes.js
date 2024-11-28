@@ -58,4 +58,9 @@ router.get("/api/third-api/info", async (req, res) => {
   }
 });
 
+router.use((req, res, next) => {
+  console.log(`Request received: ${req.method} ${req.originalUrl}`);
+  next();
+});
+
 module.exports = router;
