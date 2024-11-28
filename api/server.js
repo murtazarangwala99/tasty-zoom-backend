@@ -1,5 +1,6 @@
 const express = require("express");
 const cors = require("cors");
+const apiRoutes = require("./routes"); // Importing routes
 
 const app = express();
 
@@ -7,7 +8,7 @@ const app = express();
 app.use(cors());
 
 // Import Routes
-const apiRoutes = require("./routes");
+// const apiRoutes = require("./routes");
 
 // Use Routes
 app.use("/", apiRoutes);
