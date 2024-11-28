@@ -1,15 +1,12 @@
 {
-  "name": "backend",
+  "name": "tasty-zoom-backend",
   "version": "1.0.0",
-  "description": "",
+  "description": "Backend for Tasty Zoom",
   "main": "api/server.js",
   "scripts": {
     "start": "node api/server.js",
     "dev": "nodemon api/server.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "axios": "^1.7.7",
     "cors": "^2.8.5",
